@@ -1,0 +1,192 @@
+2025-01-07 15:46:10.655020
+ 
+tract start
+ 
+2025-01-07 15:57:43.880175 Extract finish
+ 
+2025-01-07 15:57:43.880239 Transform start
+ 
+2025-01-07 15:57:43.882259 Transform finish
+ 
+2025-01-07 15:57:43.882298 Load start
+ 
+2025-01-07 15:57:43.883834 Load finish
+ 
+2025-01-07 16:42:54.642064 Extract start
+ 
+2025-01-07 16:42:55.255107 Extract finish
+ 
+2025-01-07 16:42:55.255186 Transform start
+ 
+2025-01-07 16:42:55.257283 Transform finish
+ 
+2025-01-07 16:43:04.865163 Extract start
+ 
+2025-01-07 16:43:05.438714 Extract finish
+ 
+2025-01-07 16:43:05.438783 Transform start
+ 
+2025-01-07 16:43:05.440861 Transform finish
+ 
+2025-01-07 16:43:43.686945 Extract start
+ 
+2025-01-07 16:43:44.266334 Extract finish
+ 
+2025-01-07 16:43:44.266398 Transform start
+ 
+2025-01-07 16:43:44.268492 Transform finish
+ 
+2025-01-07 16:42:55.258242 Load start
+ 
+2025-01-07 16:43:05.440903 Load start
+ 
+2025-01-07 16:44:34.368170 Extract start
+ 
+2025-01-07 16:44:34.930657 Extract finish
+ 
+2025-01-07 16:44:34.930720 Transform start
+ 
+2025-01-07 16:44:34.932794 Transform finish
+ 
+2025-01-07 16:44:34.932836 Load start
+ 
+2025-01-07 16:44:34.934790 Load finish
+ 
+2025-01-07 16:46:13.815071 Extract start
+ 
+2025-01-07 16:46:14.388290 Extract finish
+ 
+2025-01-07 16:46:14.388362 Transform start
+ 
+2025-01-07 16:46:14.390418 Transform finish
+ 
+2025-01-07 16:46:14.390459 Load start
+ 
+2025-01-07 16:46:14.392683 Load finish
+ 
+2025-01-07 16:49:17.704865 Extract start
+ 
+2025-01-07 16:49:18.344521 Extract finish
+ 
+2025-01-07 16:49:18.344596 Transform start
+ 
+2025-01-07 16:49:18.346558 Transform finish
+ 
+2025-01-07 16:49:18.346603 Load start
+ 
+2025-01-07 16:49:18.348749 Load finish
+ 
+2025-01-07 16:52:17.324623 Extract start
+ 
+2025-01-07 16:52:17.898073 Extract finish
+ 
+2025-01-07 16:52:17.898145 Transform start
+ 
+2025-01-07 16:52:17.900444 Transform finish
+ 
+2025-01-07 16:52:17.901256 Load start
+ 
+2025-01-07 16:52:17.911830 Load finish
+ 
+2025-01-07 17:25:29.093547 Extract start
+ 
+2025-01-07 17:25:29.685890 Extract finish
+ 
+2025-01-07 17:26:06.990852 Extract start
+ 
+2025-01-07 17:26:07.557557 Extract finish
+ 
+2025-01-07 17:26:07.558492 Transform start
+ 
+2025-01-07 17:26:07.567004 Transform finish
+ 
+2025-01-07 17:25:29.685960 Transform start
+ 
+2025-01-07 17:30:00.016270 Extract start
+ 
+2025-01-07 17:30:00.642359 Extract finish
+ 
+2025-01-07 17:30:00.643074 Transform start
+ 
+2025-01-07 17:30:00.645054 Transform finish
+ 
+2025-01-07 17:30:00.645094 Load start
+ 
+2025-01-07 17:30:17.879411 Extract start
+ 
+2025-01-07 17:30:18.459151 Extract finish
+ 
+2025-01-07 17:30:18.459221 Transform start
+ 
+2025-01-07 17:30:18.461486 Transform finish
+ 
+2025-01-07 17:30:18.461529 Load start
+ 
+2025-01-07 17:31:23.437460 Extract start
+ 
+2025-01-07 17:31:24.014056 Extract finish
+ 
+2025-01-07 17:31:24.014121 Transform start
+ 
+2025-01-07 17:31:24.016393 Transform finish
+ 
+2025-01-07 17:26:07.567049 Load start
+ 
+2025-01-07 17:31:35.427859 Extract start
+ 
+2025-01-07 17:31:36.053851 Extract finish
+ 
+2025-01-07 17:31:36.053915 Transform start
+ 
+2025-01-07 17:31:36.056221 Transform finish
+ 
+2025-01-07 17:31:36.056276 Load start
+ 
+2025-01-07 17:33:56.472467 Extract start
+ 
+2025-01-07 17:33:57.052738 Extract finish
+ 
+2025-01-07 17:33:57.052800 Transform start
+ 
+2025-01-07 17:33:57.055017 Transform finish
+ 
+2025-01-07 17:33:57.055059 Load start
+ 
+2025-01-07 17:33:57.058362 Load finish
+ 
+2025-01-07 18:39:16.569210 Extract start 
+
+2025-01-07 18:39:17.164884 Extract finish 
+
+2025-01-07 18:39:17.164937 Transform start 
+
+2025-01-07 18:39:17.166991 Transform finish 
+
+2025-01-07 18:39:17.167023 Load start 
+
+2025-01-07 18:39:17.169433 Load finish 
+
+2025-01-07 18:41:33.254673 Extract start 
+
+2025-01-07 18:41:33.830499 Extract finish 
+
+2025-01-07 18:41:33.830560 Transform start 
+
+2025-01-07 18:41:33.833030 Transform finish 
+
+2025-01-07 18:41:33.833064 Load start 
+
+2025-01-07 18:41:33.837532 Load finish 
+
+2025-01-07 18:43:57.678055 Extract start 
+
+2025-01-07 18:43:58.251563 Extract finish 
+
+2025-01-07 18:43:58.251613 Transform start 
+
+2025-01-07 18:43:58.253634 Transform finish 
+
+2025-01-07 18:43:58.253666 Load start 
+
+2025-01-07 18:43:58.256082 Load finish 
+
