@@ -8,19 +8,21 @@ tasks_that_are_done = Queue()
 processes = []
 
 def processing(tasks_to_accomplish) :
-    try :
-        num = tasks_to_accomplish.get_nowait()
-    except :
-        print('finish')
-    print(f"Task no {num}")
-    time.sleep(0.5)
-    tasks_that_are_done.put(num)
-    print(f"Task no 0 is done by {current_process().name}")
+    while not tasks_to_accomplish.empty():
+        try :
+            num = tasks_to_accomplish.get_nowait()
+        except :
+            print('empty')
+        print(f"Task no {num}")
+        time.sleep(0.5)
+        tasks_that_are_done.put(num)
+        print(f"Task no {num} is done by {current_process().name}")
 
 def main() :
 
     for task in tasks :
         tasks_to_accomplish.put(task)
+
 
     for i in range(4) :
         proc = Process(name = f'Process {i}', target = processing, args = (tasks_to_accomplish,))
