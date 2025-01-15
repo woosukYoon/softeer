@@ -1,3 +1,5 @@
+'''계속 jupyter notebook에서 병렬 처리를 시도하려고 하였지만 오류가 떠서 pytho으로 실행'''
+
 from multiprocessing import Pool
 import time
 
