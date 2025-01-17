@@ -1,3 +1,7 @@
+'''
+해당 파일의 코드 구성 방향과 이유는 W1M3 - ETL 프로세스 구현하기.ipynb를 참고.
+'''
+
 # ETL 프로세스 과정에서 사용되는 패키지
 import requests
 from bs4 import BeautifulSoup
