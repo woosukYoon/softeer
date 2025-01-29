@@ -18,4 +18,6 @@
 [2025-01-22](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250122%ED%9A%8C%EA%B3%A0.md)</br>
 [2025-01-23](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250123%ED%9A%8C%EA%B3%A0.md)</br>
 [2025-01-24](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250124%ED%9A%8C%EA%B3%A0.md)</br>
+[2025-01-27](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250127%ED%9A%8C%EA%B3%A0.md)</br>
 [2025-01-28](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250128%ED%9A%8C%EA%B3%A0.md)</br>
+[2025-01-29](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250129%ED%9A%8C%EA%B3%A0.md)</br>
