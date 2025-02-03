@@ -31,17 +31,17 @@ def transform_data(rdd) :
     return rdd.map(lambda row: (row.tpep_pickup_datetime.strftime('%Y-%m-%d'), float(row.total_amount), float(row.trip_distance)))
 
 def aggreagate_data(rdd) :
-    total_trips = rdd.count()
-    total_revenue = rdd.map(lambda x : x[1]).sum()
-    avg_trip_distance = rdd.map(lambda x : x[2]).mean()
-    # total_trips, total_revenue, total_trip_distance = rdd.aggregate(
-    #     (0.0, 0.0, 0.0),
-    #     lambda acc, x : (acc[0] + 1, acc[1] + x[1], acc[2] + x[2]),
-    #     lambda acc1, acc2 : (acc1[0] + acc2[0], acc1[1] + acc2[1] , acc1[2] + acc2[2])
-    #     )
+    # total_trips = rdd.count()
+    # total_revenue = rdd.map(lambda x : x[1]).sum()
+    # avg_trip_distance = rdd.map(lambda x : x[2]).mean()
+    total_trips, total_revenue, total_trip_distance = rdd.aggregate(
+        (0.0, 0.0, 0.0),
+        lambda acc, x : (acc[0] + 1, acc[1] + x[1], acc[2] + x[2]),
+        lambda acc1, acc2 : (acc1[0] + acc2[0], acc1[1] + acc2[1] , acc1[2] + acc2[2])
+        )
     
-    # total_revenue = round(total_revenue, 2)
-    # avg_trip_distance = total_trip_distance / total_trips
+    total_revenue = round(total_revenue, 2)
+    avg_trip_distance = total_trip_distance / total_trips
 
     daily_trips = rdd.map(lambda x : (x[0],1)).reduceByKey(lambda a, b : a + b).collect()
     daily_revenue = rdd.map(lambda x : (x[0],x[1])).reduceByKey(lambda a, b : a + b).collect()
