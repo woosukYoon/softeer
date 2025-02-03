@@ -1,0 +1,26 @@
+2025-01-08 17:04:25.940786 Extract start 
+
+2025-01-08 17:04:26.528822 Extract finish 
+
+2025-01-08 17:05:55.670582 Extract start 
+
+2025-01-08 17:05:56.288278 Extract finish 
+
+2025-01-08 17:05:56.288334 Transform start 
+
+2025-01-08 17:05:56.291329 Transform finish 
+
+2025-01-08 17:05:56.291366 Load start 
+
+2025-01-08 17:05:56.295416 Load finish 
+
+2025-01-09 17:38:47.489527 Extract start 
+
+2025-01-09 17:38:48.160920 Extract finish 
+
+2025-01-09 17:38:48.160995 Transform start 
+
+2025-01-09 17:38:48.165628 Transform finish 
+
+2025-01-09 17:38:48.167670 Load start 
+
