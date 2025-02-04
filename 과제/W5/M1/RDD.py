@@ -1,8 +1,6 @@
 from pyspark import SparkContext, SparkConf
 from io import StringIO
 from pyspark.sql import SparkSession
-import shutil
-import os
 from datetime import datetime
 
 # conf = SparkConf().setAppName("NYC_TAXI_Analysis").setMaster("local[*]")
@@ -31,9 +29,9 @@ def transform_data(rdd) :
     return rdd.map(lambda row: (row.tpep_pickup_datetime.strftime('%Y-%m-%d'), float(row.total_amount), float(row.trip_distance)))
 
 def aggreagate_data(rdd) :
-    # total_trips = rdd.count()
-    # total_revenue = rdd.map(lambda x : x[1]).sum()
-    # avg_trip_distance = rdd.map(lambda x : x[2]).mean()
+    total_trips = float(rdd.count())
+    total_revenue = rdd.map(lambda x : x[1]).sum()
+    avg_trip_distance = rdd.map(lambda x : x[2]).mean()
     total_trips, total_revenue, total_trip_distance = rdd.aggregate(
         (0.0, 0.0, 0.0),
         lambda acc, x : (acc[0] + 1, acc[1] + x[1], acc[2] + x[2]),
@@ -54,8 +52,6 @@ def print_results(results) :
     print("Average Trip Distance :", avg_trip_distance)
 
 def save_results(results, output_path) :
-    if os.path.exists(output_path) :
-        shutil.rmtree(output_path)
 
     total_trips, total_revenue, avg_trip_distance, daily_trips, daily_revenue = results
     total_df = spark.createDataFrame([
