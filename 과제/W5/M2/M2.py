@@ -48,8 +48,6 @@ def transform_data(cleaned_df) :
 # 데이터 출력 및 저장
 def action(transformed_df) :
 
-    transformed_df.cache()
-
     # 변환된 데이터프레임 출력
     transformed_df.show(5)
 

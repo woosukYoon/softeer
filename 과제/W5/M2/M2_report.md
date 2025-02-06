@@ -41,6 +41,21 @@ Daily 통계량을 구하기 위해 'pickup_date'열로 Groupby를 해주고, ag
         f.mean('trip_distance').alias("Daily_average_trip_distance")
     )
 
+## action
+
+    # 데이터 출력 및 저장
+    def action(transformed_df) :
+
+    transformed_df.cache()
+
+    # 변환된 데이터프레임 출력
+    transformed_df.show(5)
+
+    # 데이터프레임 저장
+    transformed_df.coalesce(1).write.csv(path = './output/daily_results_plural.csv', mode = 'overwrite', header = True)
+
+action으로 show와 write.csv를 사용하였다. coalesce(1)을 이용하여 하나의 csv 파일로 저장한다.
+
 ---
 ## 메인 함수
 메인 함수를 작동해서, Action 전에는 Job이 생성되지 않는 것을 Spark UI를 통해서 확인한다.
@@ -60,4 +75,20 @@ Transform 이후에도 completed jobs가 변화하지 않음을 확인할 수 �
 
 ![input3](./markdown_pictures/input3.png)
 
-Action 이후에는 Action에 의해 job이 생성되고 실행되면서, completed jobs이 많은 생겼음을 확인할 수 있다. 각 job의 Stage 개수와 task의 개수를 확인할 수 있다.
+Action 이후에는 Action에 의해 job이 생성되고 실행되면서, completed jobs이 많은 생겼음을 확인할 수 있다. 각 job의 Stage 개수와 task의 개수를 확인할 수 있다. 또한 각 job에 대해 살펴보면 show로 인해 3개의 job이 생성됬고, write.csv에 의해 4개의 job이 생성되었다. 이를 통해 action 동작에 대해서 각 하나의 job이 생기는 것뿐만 아니라, action 동작이 실행되면서 여러 기능을 내부에서 실행하기에 action 하나에서도 몇 가지의 job이 생성됨을 확인할 수 있다.
+
+Action 중 write_csv에서 생기는 job들의 DAG는 다음과 같다.
+
+<완료된 전체 Job 중 5번째 Job의 DAG>
+![DAG1](./markdown_pictures/DAG1.png)
+
+<완료된 전체 Job 중 6번째 Job의 DAG>
+![DAG6](./markdown_pictures/DAG2.png)
+
+<완료된 전체 Job 중 7번째 Job의 DAG>
+![DAG7](./markdown_pictures/DAG3.png)
+
+<완료된 전체 Job 중 8번째 Job의 DAG>
+![DAG8](./markdown_pictures/DAG4.png)
+
+이후, show와 write.csv가 동일한 데이터프레임에서 실행하는 작업이기에 cache를 이용해 본 결과, write.csv의 job은 한 개로 변화하였지만, show의 job 단계가 6개로 변화하였다.
