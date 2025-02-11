@@ -4,7 +4,7 @@ import pyspark.sql.functions as f
 from datetime import datetime
 
 # 스파크 세션 생성
-spark = SparkSession.builder.appName("NYC_Taxi_Analysis_W5M2").config("spark.driver.bindAddress", "127.0.0.1").getOrCreate()
+spark = SparkSession.builder.appName("NYC_Taxi_Analysis_W5M2").config("spark.driver.bindAddress", "127.0.0.1").config("spark.sql.adaptive.enabled", "false").getOrCreate()
 
 # 파일 불러오기
 def load_data(file_path, file_format) :
