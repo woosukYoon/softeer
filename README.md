@@ -43,3 +43,4 @@
 
 ### 6주차
 [2025-02-10](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250210%ED%9A%8C%EA%B3%A0.md)</br>
+[2025-02-11](https://github.com/woosukYoon/softeer/blob/main/%ED%9A%8C%EA%B3%A0/250211%ED%9A%8C%EA%B3%A0.md)</br>
